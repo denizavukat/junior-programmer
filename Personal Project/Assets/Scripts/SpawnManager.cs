@@ -18,10 +18,7 @@ public class SpawnManager : MonoBehaviour
         // Define the positions of the plane's sides
         sidePositions = new Vector3[] { side1, side2, side3, side4 };
 
-        // Generate the initial random interval
-        spawnInterval = Random.Range(7.0f, 10.0f);
-
-        // Start spawning cubes at random intervals
+        spawnInterval = Random.Range(2.0f, 5.0f);
         InvokeRepeating("SpawnRandomCube", startDelay, spawnInterval);
     }
 
@@ -34,11 +31,6 @@ public class SpawnManager : MonoBehaviour
         // Spawn the cube at the selected side position
         Instantiate(cubePrefabs[typeIndex], sidePositions[positionIndex], cubePrefabs[typeIndex].transform.rotation);
 
-        // Update the spawn interval randomly for the next spawn
-        spawnInterval = Random.Range(7.0f, 10.0f);
-
-        // Cancel and restart the InvokeRepeating to use the new interval
-        CancelInvoke("SpawnRandomCube");
-        InvokeRepeating("SpawnRandomCube", spawnInterval, spawnInterval);
+        
     }
 }
