@@ -30,11 +30,11 @@ public class DestroyOutOfBounds : MonoBehaviour
                 // Update the position to stay within bounds
                 transform.position = new Vector3(clampedX, transform.position.y, clampedZ);
 
-                Debug.Log($"PlayerBall clamped to position: {transform.position}");
+                //Debug.Log($"PlayerBall clamped to position: {transform.position}");
             }
             else
             {
-                Debug.Log($"Object destroyed for exceeding bounds: {transform.position}");
+                //Debug.Log($"Object destroyed for exceeding bounds: {transform.position}");
                 Destroy(gameObject);
             }
         }
