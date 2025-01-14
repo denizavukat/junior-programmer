@@ -356,6 +356,9 @@
 -analyzer:"Library/PackageCache/com.unity.collab-proxy@2.6.0/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll"
 "Assets/Scripts/DestroyOutOfBounds.cs"
 "Assets/Scripts/MoveForward.cs"
+"Assets/Scripts/ObstacleBehaviour.cs"
+"Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/SpawnManager.cs"
 -langversion:9.0
 

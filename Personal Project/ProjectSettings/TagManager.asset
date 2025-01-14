@@ -3,12 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacle
+  - HealthCapsule
+  - PlayerBall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - groundLayer
   - Water
   - UI
   - 
